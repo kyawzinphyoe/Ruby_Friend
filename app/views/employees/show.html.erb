@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">
+    Employee Infomation
+  </div>
+  <div class="card-body">
+
+    <p><b> Employee No : </b><%= @employee.emp_no %></p>
+    <p><b> Name : </b><%= @employee.name %></p>
+    <p><b> Email : </b><%= @employee.email %></p>
+    <p><b> Phone : </b><%= @employee.phone %></p>
+    <p><b> Position : </b><%= @employee.position %></p>
+    
+  </div>
+  <div class="card-footer">
+    <%= link_to 'Edit', edit_employee_path(@employee), class: "btn btn-primary" %> |
+    <%= link_to 'Back', employees_path, class: "btn btn-secondary" %>
+  </div>
+</div>
+
+
